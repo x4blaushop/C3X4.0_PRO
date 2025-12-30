@@ -1,7 +1,7 @@
-script.js: 
-/* DNA C3X4.0 - SISTEMA VIVO 
-   PROPRIEDADE DO ARQUITETO JOSÉ PATRICK 
+/* DNA C3X4.0 - SISTEMA VIVO
+   ARQUITETURA DE HABITAÇÃO
 */
+
 const canvas = document.getElementById("matrix");
 const ctx = canvas.getContext("2d");
 
@@ -43,7 +43,6 @@ function drawMatrix() {
   }
 }
 
-// Estabilidade e Silêncio Operacional
 setInterval(drawMatrix, 50);
 
 window.addEventListener("resize", () => {
@@ -51,12 +50,9 @@ window.addEventListener("resize", () => {
   initMatrix();
 });
 
-/* FUNÇÃO INVISÍVEL - ACESSO DO ARQUITETO */
 let systemAwake = true;
-
 document.addEventListener("keydown", (e) => {
-  // Verificação de pulso da célula
   if (e.key === "i" && systemAwake) {
-    console.log("Célula responde: DNA do Arquiteto Ativo.");
+    console.log("Célula BASE ativa.");
   }
 });
